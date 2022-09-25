@@ -6,9 +6,7 @@ public class Main {
     static int b;
 
     public static void main(String[] args) {
-        showTitle();
-        variableInfo();
-        handleData();
+        showResult();
     }
 
     private static int add(int a, int b) {
@@ -42,8 +40,16 @@ public class Main {
         int d = division(a, b);
         System.out.println(d);
     }
+
     private static void showTitle() {
         System.out.println("Calculator for base calculations");
-        System.out.println("Version 1.0");
+        System.out.println("Version 1.0" +
+                "\n----------------------");
+    }
+
+    public static void showResult() {
+        showTitle();
+        variableInfo();
+        handleData();
     }
 }
